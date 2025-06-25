@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+}
+
+.faq {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 21px;
+    padding-right: 21px;
+}
+.rectangle{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-0 {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.text {
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 180%;
+    padding: 13px 0;
+}
+.text h1 {
+    margin: 0;
+}
+
+.text_2 {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.text_2 p{
+font-size: 14px;
+}
+
+
+.contdbut {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.contact {
+    position: relative;
+    display: flex;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 45px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button {
+    width: 176px;
+    height: 56px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+button span, button::before, button::after {
+    background-color: transparent !important;
+}
+
+button * {
+    background-color: transparent !important;
+}
+
+
+
+.accordion {
+    width: 55%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.accordion-item {
+    border-bottom: 1px solid black;
+  }
+  
+  .accordion-item:first-child {
+    border-top: 1px solid black;
+  }
+  
+  .accordion-header {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .accordion-header span:first-child {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: black;
+    text-align: left;
+  }
+  
+  .accordion-icon {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 0 0 0;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  
+  .accordion-content p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    line-height: 140%;
+    text-align: left;
+    margin: 0;
+    padding: 10px 0 20px 0;
+  }
+  
+  .accordion-item.active .accordion-content {
+    display: block;
+    max-height: 115px;
+  }
+  
+  .accordion-item.active .accordion-icon {
+    content: "-";
+  }
+  
+  .accordion-header,
+  .accordion-content {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }

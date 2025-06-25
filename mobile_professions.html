@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Руднево</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style/mini0.css">
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Базовые стили */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Manrope', sans-serif;
+      overflow-x: hidden;
+      width: 100%;
+      background-color: #fff;
+      color: #333;
+    }
+    
+    .App {
+        font-family: 'Manrope', sans-serif;
+    }
+
+
+
+    .arrow {
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+     /* Общие стили для контейнеров */
+     .prof-container, .contain, .Mast-lab, .containe {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+    /* ... (остальные стили, специфичные для страницы) ... */
+    /* Главная секция */
+    .prof-main-content {
+      margin-top: 30px;
+    }
+    
+    .prof-heading-wrapper h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #010205;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+    
+    .prof-subheading {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+    
+    .prof-card {
+      margin-top: 20px;
+    }
+    
+    .prof-card-content {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 10%, transparent 70%), url('./public/new.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 350px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: #FFFFFF;
+    }
+    
+    .mask-group {
+      display: none;
+    }
+    
+    .prof-card-text {
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 400;
+      position: static;
+      background: none;
+      padding: 0;
+      margin: 0;
+      color: #FFFFFF;
+    }
+    
+    .prof-card-heading {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 15px;
+      position: static;
+      background: none;
+      padding: 0;
+      color: #FFFFFF;
+      /* Remove any leftover styles from before */
+      bottom: auto;
+      left: auto;
+      right: auto;
+    }
+    
+    /* Направления подготовки */
+    .prof-card-container {
+      margin-top: 40px;
+    }
+    
+    .prof-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .prof-header h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #010205;
+    }
+    
+    .prof-header-right span {
+      font-size: 14px;
+      color: #6c757d;
+      font-weight: 500;
+    }
+    
+    .cards-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+      width: 100%;
+    }
+    
+    .direction-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      border: 1px solid #f0f0f0;
+    }
+    
+    .direction-card:hover, .direction-card.hover-effect {
+      background-color: #99CF63;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-color: #99CF63;
+    }
+    
+    .direction-card:hover h3,
+    .direction-card:hover p,
+    .direction-card.hover-effect h3,
+    .direction-card.hover-effect p {
+        color: #fff;
+    }
+    
+    .card-conte {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: #6c757d;
+    }
+    
+    .icon {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+    }
+    
+    .icon img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .text-content h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: #010205;
+      font-weight: 600;
+    }
+    
+    .text-content p {
+      font-size: 14px;
+      color: #333;
+    }
+    
+    /* Мастерские и лаборатории */
+    .Mast-lab {
+      margin-top: 30px;
+    }
+    .Mast {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px 16px;
+      margin-top: 30px;
+      align-items: start;
+    }
+    
+    .workshop-card--full {
+      grid-column: 1 / -1;
+    }
+    
+    .workshop-card .workshop-image-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    
+    .workshop-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    
+    .workshop-card--full img {
+      height: 240px;
+    }
+    
+    .workshop-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      transform: translateY(0);
+    }
+    
+    .workshop-description {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      color: #fff;
+      font-size: 14px;
+      line-height: 1.4;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .workshop-card:hover .workshop-overlay,
+    .workshop-card.hover-effect .workshop-overlay {
+      opacity: 1;
+    }
+    
+    .workshop-card:hover .workshop-description,
+    .workshop-card.hover-effect .workshop-description {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .workshop-info {
+      display: flex;
+      align-items: start;
+      gap: 8px;
+    }
+    
+    .workshop-info h4 {
+      font-size: 15px;
+      color: #010205;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    
+    .green-dot {
+      display: none;
+    }
+    
+    /* Секция студента */
+    .containe {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .student-card {
+      position: relative;
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 20%, transparent 60%), url('./public/1313.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 16px;
+      padding: 24px;
+      min-height: 420px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #fff;
+      overflow: hidden;
+      transition: background-image 0.4s ease;
+    }
+
+    .student-card:hover, .student-card.hover-effect {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 30%, transparent 70%), url('./public/1313.jpg');
+    }
+
+    .student-quote {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5;
+      max-width: 95%;
+      z-index: 2;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .student-card:hover .student-quote, 
+    .student-card.hover-effect .student-quote {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .student-details {
+      text-align: left;
+      z-index: 2;
+    }
+
+    .student-details h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 5px 0;
+    }
+
+    .student-details p {
+      font-size: 14px;
+      font-weight: 400;
+      opacity: 0.9;
+      margin: 0;
+    }
+
+    .up-arrow-icon {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      width: 36px;
+      height: 36px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .up-arrow-icon::before {
+      content: '';
+      border: solid #fff;
+      border-width: 0 2.5px 2.5px 0;
+      display: inline-block;
+      padding: 4px;
+      transform: rotate(-135deg);
+      margin-top: 4px;
+    }
+    
+    /* Адаптация для планшетов */
+    @media (min-width: 480px) {
+      .Mast {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .prof-heading-wrapper h1 {
+        font-size: 32px;
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .prof-content-wrapper {
+        display: flex;
+        gap: 30px;
+      }
+      
+      .prof-left-content {
+        flex: 1;
+      }
+      
+      .prof-card {
+        flex: 1;
+      }
+      
+      .cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="App">
+    
+    <!-- Оверлей для затемнения фона -->
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- mini0 -->
+    <div class="header">
+      <div class='head'>
+        <div class="notification">
+          <button class="notice">
+            <img src="public/bell.svg" alt="Bell" />
+          </button>
+        </div>
+        <div class="nav-1">
+          <button class="nav-toggle">
+            <img src="public/Group 427320850.svg" alt="Toggle Sidebar" />
+          </button>
+          <nav class="sidebar" id="sidebar">
+            <ul>
+              <li>
+                <a href="mobile.html">О нас</a>
+                <button class="arrow">
+                  <img src="public/Vector2.svg" alt="Arrow" />
+                </button>
+              </li>
+              <li>
+                <a href="mobile_professions.html">Профессии</a>
+            <button class="arrow">
+                <img src="public/Vector2.svg" alt="Arrow" />
+            </button>
+              </li>
+              <li>
+                <a href="#">Партнеры</a>
+                <button class="arrow">
+                  <img src="public/Vector2.svg" alt="Arrow" />
+                </button>
+              </li>
+              <li>
+                <a href="#">Инфаструктура</a>
+                <button class="arrow">
+                  <img src="public/Vector2.svg" alt="Arrow" />
+                </button>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+                <button class="arrow">
+                  <img src="public/Vector2.svg" alt="Arrow" />
+                </button>
+              </li>
+            </ul>
+            <div class='ras'>
+              <button class="rasp"><p>Расписание</p></button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- ProfNac - Главная секция -->
+    <div class="prof-container">
+        <div class="prof-main-content">
+            <div class="prof-content-wrapper">
+                <div class="prof-card">
+                    <div class="prof-card-content">
+                        <img class="mask-group" alt="" />
+                        <h2 class="prof-card-heading">Твоя профессия<br />начинается здесь</h2>
+                        <p class="prof-card-text">
+                            Ты получаешь не просто диплом — ты осваиваешь профессию, востребованную в реальной индустрии
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nappod - Направления подготовки -->
+    <div class="contain">
+        <div class="prof-card-container">
+            <div class="prof-header">
+                <h2>Направления подготовки</h2>
+                <div class="prof-header-right">
+                    <span>Аудитории</span>
+                </div>
+            </div>
+
+            <div class="cards-grid">
+                <div class="direction-card card-1">
+                    <div class="card-conte">
+                        <div class="icon">
+                            <img src="public/Icon_0.svg" alt="Электроника" id="icon-0" />
+                        </div>
+                        <div class="text-content">
+                            <h3>Электроника</h3>
+                            <p>4 направления</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="direction-card card-2">
+                    <div class="card-conte">
+                        <div class="icon">
+                            <img src="public/123.png" alt="Машиностроение" id="icon-1" />
+                        </div>
+                        <div class="text-content">
+                            <h3>Машиностроение</h3>
+                            <p>8 направлений</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="direction-card card-3">
+                    <div class="card-conte">
+                        <div class="icon">
+                            <img src="public/Icon_2.svg" alt="Автоматизация производства" id="icon-2" />
+                        </div>
+                        <div class="text-content">
+                            <h3>Автоматизация производства</h3>
+                            <p>3 направления</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="direction-card card-4">
+                    <div class="card-conte">
+                        <div class="icon">
+                            <img src="public/Icon_3.svg" alt="Авиационная промышленность" id="icon-3" />
+                        </div>
+                        <div class="text-content">
+                            <h3>Авиационная промышленность и беспилотные авиационные системы</h3>
+                            <p>4 направления</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MastLab - Мастерские и лаборатории -->
+    <section class='Mast-lab'>
+        <div class='Mast'>
+            <div class="workshop-card workshop-card--full">
+                <div class="workshop-image-container">
+                    <img src="public/1111.jpg" alt="Аудитория авиастроения" />
+                    <div class="workshop-overlay"></div>
+                    <p class="workshop-description">Пространство, где студенты собирают реальные узлы летательных аппаратов, изучают композитные материалы и учатся работать по стандартам отрасли</p>
+                </div>
+                <div class="workshop-info">
+                    <h4>Аудитория авиастроения</h4>
+                </div>
+            </div>
+
+            <div class="workshop-card">
+                <div class="workshop-image-container">
+                    <img src="public/1.svg" alt="Мастерская металлообработки" />
+                    <div class="workshop-overlay"></div>
+                    <p class="workshop-description">Мастерская, где учатся работать на фрезерных, сверлильных и токарных станках</p>
+                </div>
+                <div class="workshop-info">
+                    <h4>Мастерская металлообработки</h4>
+                </div>
+            </div>
+
+            <div class="workshop-card">
+                <div class="workshop-image-container">
+                    <img src="public/3.svg" alt="Лаборатория радиоэлектроники" />
+                    <div class="workshop-overlay"></div>
+                    <p class="workshop-description">Здесь учатся паять, собирать, проверять работу электросхем</p>
+                </div>
+                <div class="workshop-info">
+                    <h4>Лаборатория радиоэлектроники</h4>
+                </div>
+            </div>
+
+            <div class="workshop-card">
+                <div class="workshop-image-container">
+                    <img src="public/4.svg" alt="Мастерская токарных работ" />
+                    <div class="workshop-overlay"></div>
+                    <p class="workshop-description">Учатся изготавливать детали с высокой точностью</p>
+                </div>
+                <div class="workshop-info">
+                    <h4>Мастерская токарных работ</h4>
+                </div>
+            </div>
+
+            <div class="workshop-card">
+                <div class="workshop-image-container">
+                    <img src="public/5.svg" alt="Сварочная кабина" />
+                    <div class="workshop-overlay"></div>
+                    <p class="workshop-description">Закрытое рабочее место с вытяжной системой, где осваивают ручную дуговую и полуавтоматическую сварку, отрабатывая технику и безопасность на практике</p>
+                </div>
+                <div class="workshop-info">
+                    <h4>Сварочная кабина</h4>
+                </div>
+            </div>
+
+            <div class="workshop-card workshop-card--full">
+                <div class="workshop-image-container">
+                    <img src="public/1212.jpg" alt="Аудитория технического контроля" />
+                    <div class="workshop-overlay"></div>
+                    <p class="workshop-description">Студенты осваивают методы точных измерений и проверку параметров деталей — важнейшие навыки для специалистов ОТК и инженеров по качеству</p>
+                </div>
+                <div class="workshop-info">
+                    <h4>Аудитория технического контроля</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yceb - Студент -->
+    <div class="containe">
+        <div class="student-card">
+            <div class="up-arrow-icon"></div>
+            <p class="student-quote">
+                «Учёба здесь — это не только теория, но и настоящая практика. На первом курсе работал на современном оборудовании, почувствовал себя частью настоящего производства!»
+            </p>
+            <div class="student-details">
+                <h3>Алексей Смирнов</h3>
+                <p>студент направления «Автоматизация производственных процессов»</p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script src="./mobile_script.js"></script>
+</body>
+</html> 
