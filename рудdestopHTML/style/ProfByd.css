@@ -1,0 +1,88 @@
+.Prof-byd {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.FON {
+    width: 1408px;
+    height: 235px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    
+}
+
+.NEB img {
+    width: 1408px;
+    height: 235px;
+    border-radius: 30px;
+}
+
+.Zdan img {
+    width: 350px;
+    height: 320px;
+}
+
+.Zdan {
+    top: -76px;
+    left: 680px;
+    position: absolute;
+    display: flex;
+}
+
+.Text {
+    position: absolute;
+    display: flex;
+    margin-left: 64px;
+    margin-right: 21px;
+}
+
+.Text p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -2%;
+}
+
+.Button-ttt {
+    position: absolute;
+    display: flex;
+    left: 1050px;
+}
+
+.flex-items-center {
+    width: 289px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 70px;
+    padding: 10px 10px 10px 10px;
+    gap: 11px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -2%;
+    color: #010205;
+    transition: all 0.3s ease;
+}
+
+.flex-items-center img {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease;
+}
+
+.flex-items-center:hover {
+  background-color: #000000;
+  color: #ffffff;
+}

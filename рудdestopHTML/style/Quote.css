@@ -1,0 +1,158 @@
+.gerp {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.quote-block {
+  max-width: 1320px;
+  width: 100%;
+}
+.geng-img-container{
+  display: flex;
+}
+.flover {
+  position: relative;
+  display: flex;
+  height: auto;
+  text-align: left;
+  justify-content: center;
+  align-items: flex-start;
+  transition: height 0.2s cubic-bezier(.4,0,.2,1);
+  overflow: hidden;
+
+}
+
+.flover p {
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 140%;
+  max-width: 1320px;
+  min-height: 120px;
+  min-width: 1320px;
+  text-align: left;
+  margin: 0 auto;
+  transition: min-width 0.2s;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.flover p.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.geng-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.geng {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1320px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 74px;
+  margin-bottom: 100px;
+}
+
+.yuy {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.yuy p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+.yuy span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0%;
+  color: #878C91;
+
+}
+
+.navigation {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 38px;
+  width: 300px;
+}
+
+.nav-button {
+  width: 88px; 
+  height: 56px; 
+  border: 1px solid black; 
+  border-radius: 70px; 
+  background: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all 0.3s ease;
+}
+
+.nav-button.right {
+  background-color: black; 
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+.nav-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  display: inline-flex;
+  line-height: 180%;
+  letter-spacing: 0%;
+  font-style: solid;
+  offset: 0%;
+  text-decoration-thickness: 0%;
+  width: 45px;
+}
+
+.nav-text span{
+  color: black;
+  text-decoration: underline;
+}
+
+.nav-button, .nav-text {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+}
+
+.nav-button:hover {
+  background-color: #000;
+}
+
+.nav-button.right:hover {
+  background-color: #fafafa;
+}
+
+.navigation p {
+  margin: 0;
+  white-space: nowrap;
+}

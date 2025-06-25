@@ -1,0 +1,48 @@
+.containe {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  background-color: transparent;
+}
+
+.car {
+  width: 100%;
+  max-width: 1388px;
+  height: 416px;
+  position: relative;
+}
+
+.card-conten {
+  height: 100%;
+  width: 100%;
+  background-image: url('./public/group-1000001999.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.student-info {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 578px;
+}
+
+.student-name {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.6px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.student-program {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: -0.32px;
+  color: black;
+}

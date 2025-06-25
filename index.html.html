@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Перенаправление...</title>
+  <script>
+    function isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    window.onload = function() {
+      if (isMobile()) {
+
+        window.location.href = "рудmobileHTML/mobile.html";
+      } else {
+
+        window.location.href = "рудdestopHTML/index.html";
+      }
+    }
+  </script>
+</head>
+<body>
+  <p>Переход на нужную версию сайта...</p>
+</body>
+</html>

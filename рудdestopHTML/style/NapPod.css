@@ -1,0 +1,139 @@
+.contain {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 150px;
+  position: relative;
+}
+
+.card-container {
+  max-width: 1388px;
+  width: 100%;
+  background-color: white;
+  border-radius: 24px;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.header h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62.4px;
+  letter-spacing: -1.44px;
+  color: #010205;
+}
+
+.header-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-right span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #010205;
+}
+
+.cards-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.direction-card { 
+  min-height: 216px;
+  min-width: 288px;
+  border-radius: 20px;
+  border: 1px solid #c9c9c9;
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.direction-card:hover {
+  background-color: #99cf62;
+  border: 1px solid transparent;
+}
+.direction-card:hover {
+  color: white;
+}
+
+.direction-card:hover .text-content h3,
+.direction-card:hover .text-content p {
+  color: white;
+}
+.direction-card:hover .text-content h3,
+.direction-card:hover .text-content p,
+.direction-card:hover .open-k.open .open-k-l {
+  color: white;
+}
+.direction-card:nth-child(4) .text-content p {
+  padding-top: 25px;
+}
+.card-conte {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.icon {
+  margin-top: 10px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: cover;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nap_text_fourth {
+  display: flex;
+  position: absolute;
+  margin-top: 40px;
+}
+
+.text-content h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+
+.direction-card:nth-child(4) .text-content h3 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.direction-card:nth-child(3) .text-content h3 {
+  line-height: 24px;
+}
+
+.text-content p {
+  opacity: 0.75;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  transition: color 0.3s ease;
+}

@@ -1,0 +1,156 @@
+.faq {
+  display: flex;
+  justify-content: center;
+}
+  
+.rectangle {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 26px;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+  
+.group-1 {
+  margin-top: 30px;
+  margin-left: 70px;
+  margin-right: 80px;
+}
+  
+.text {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 130%;
+}
+  
+.text_2 {
+  color: #878C91;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 30px;
+  line-height: 140%;
+}
+  
+.foot {
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+}
+  
+.vopr {
+  width: 175px;
+  height: 55px;
+  border: 1px solid black;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin-right: 50px;
+  transition: all 0.3s ease;
+}
+
+.vopr:hover {
+  color: #ffffff;
+  background-color: #000;
+}
+  
+button span, button::before, button::after {
+  background-color: transparent !important;
+}
+  
+button * {
+  background-color: transparent !important;
+}
+
+.accordion {
+  position: relative;
+  max-width: 627px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 60px;
+}
+  
+.accordion-item {
+  border-bottom: 1px solid black;
+}
+  
+.accordion-item:first-child {
+  border-top: 1px solid black;
+}
+  
+.accordion-header {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+  
+.accordion-header span:first-child {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -3%;
+  color: #010205;
+  text-align: left;
+}
+  
+.accordion-icon {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+  
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0 0 0;
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+  
+.accordion-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #878C91;
+  font-weight: 500;
+  line-height: 140%;
+  margin: 0;
+  padding: 10px 0 20px 0;
+}
+  
+.accordion-item.active .accordion-content {
+  display: block;
+  max-height: 115px;
+}
+  
+.accordion-item.active .accordion-icon {
+  content: "-";
+}
+  
+.accordion-header, .accordion-content {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

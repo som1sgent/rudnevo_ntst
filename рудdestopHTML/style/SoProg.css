@@ -1,0 +1,87 @@
+.conta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 950px;
+  margin-top: 50px;
+}
+  
+.content {
+  width: 1260px;
+  position: relative;
+  height: 850px;
+}
+  
+.specialist-card {
+  position: absolute;
+  width: 610px;
+  height: 375px;
+}
+  
+.specialist-card:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+  
+.specialist-card:nth-child(2) {
+  top: 0;
+  left: 650px;
+}
+  
+.specialist-card:nth-child(3) {
+  top: 475px;
+  left: 0;
+}
+  
+.specialist-image {
+  width: 610px;
+  height: 375px;
+}
+  
+.specialist-title {
+  position: absolute;
+  height: 63px;
+  top: 312px;
+  left: 0;
+  max-width: 578px;
+  font-family: 'Montserrat', Helvetica;
+  font-weight: 600;
+  color: black;
+  font-size: 22px;
+  letter-spacing: -0.44px;
+  line-height: 30.8px;
+}
+  
+.specialist-description {
+  position: absolute;
+  width: 576px;
+  top: 392px;
+  left: 0;
+  font-family: 'Montserrat', Helvetica;
+  font-weight: 500;
+  color: #878c91;
+  font-size: 18px;
+  line-height: 25.2px;
+}
+  
+.bottom-text {
+  position: absolute;
+  width: 526px;
+  top: 589px;
+  left: 734px;
+  font-family: 'Montserrat', Helvetica;
+  font-weight: 600;
+  color: #010205;
+  font-size: 40px;
+  text-align: right;
+  letter-spacing: -1.20px;
+  line-height: 44px;
+}
+
+.bottom-text {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+  max-width: 800px;
+  line-height: 1.4;
+}

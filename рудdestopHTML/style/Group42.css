@@ -1,0 +1,203 @@
+.Group-42 {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.group-42-1 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.opis2 {
+  position: absolute;
+  top: 370px;
+  margin-left: 50px;
+  color: white;
+  line-height: 110%;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.opis {
+  position: absolute;
+  left: 820px;
+  line-height: 100%;
+  font-weight: 600;
+  font-size: 30px;
+  top: 150px;
+}
+
+.log {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  margin-left: 60px;
+  gap: 10px;
+}
+
+.Ryd-glav {
+  position: relative;
+  display: flex;
+}
+
+.Obraz {
+  display: flex;
+  margin-top: 25px;
+  position: relative;
+  justify-content: center;
+}
+
+.img-obraz {
+  display: flex;
+  height: 281px;
+  width: 676px;
+}
+
+.OP img {
+  width: 54px;
+  position: relative;
+  margin-left: 5px;
+}
+
+.OP {
+  width: 270px;
+  position: absolute;
+  display: inline-flex;
+  height: 20px;
+  margin-left: 37px;
+  margin-top: 66px;
+  align-items: center;
+}
+
+.OP p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 126%;
+}
+  
+.Ob-name {
+  width: auto;
+  height: auto;
+  position: absolute;
+  display: flex;
+  top: 100px;
+  margin-left: 37px;
+}
+.Ob-name p {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 130%;
+}
+.OP p {
+  position: relative;
+  left: 70px;
+}
+  
+.img-obraz p {
+  position: absolute;
+  color: white;
+  display: flex;
+  margin: 0;
+}
+
+.lab {
+  width: 259px;
+  height: 281px;
+  background-color: #F0F0F0;
+  border-radius: 20px;
+  margin-left: 18px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.Kvad span {
+  font-size: 42px;
+}
+
+.kvad-met {
+  width: 309px;
+  height: 281px;
+  background-color: rgba(240, 240, 240, 1);
+  border-radius: 20px;
+  margin-left: 18px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.Kvad {
+  width: 100%;
+  height: 100px;
+  margin-top: 25px;
+}
+
+.Kvad p {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+  margin-left: 25px;
+}
+
+.opi p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-left: 25px;
+  color: rgba(92, 93, 95, 1);
+}
+
+.opi-2 {
+  height: 76px;
+}
+
+.opi-2 p {
+  margin: 0;
+  height: 57px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-left: 25px;
+  color: rgba(92, 93, 95, 1);
+}
+
+.polos {
+  display: inline-flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+}
+
+.BL,.BS {
+  margin-top: 20px;
+  margin-left: 25px;
+  position: absolute;
+}
+
+.polos-2 {
+  display: inline-flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+}
+
+.BL-2, .BS-2 {
+  margin-left: 20px;
+  position: absolute;
+  margin-top: 22px;
+}
+
+.BL-2 {
+  width: 220px;
+  height: 10px;
+}

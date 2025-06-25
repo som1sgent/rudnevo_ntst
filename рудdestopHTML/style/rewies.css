@@ -1,0 +1,308 @@
+.reviews {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.containere {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.content {
+  width: 1440px;
+  padding: 48px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-section {
+  width: 531px;
+  margin-left: 71px;
+}
+
+.title {
+  font-weight: 600;
+  color: #000;
+  font-size: 48px;
+  letter-spacing: -3%;
+  line-height: 130%;
+  margin-bottom: 33px;
+}
+
+.description {
+  font-weight: 500;
+  color: #878c91;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  margin-bottom: 48px;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formm-group {
+  margin-bottom: 30px;
+}
+
+.formm-input {
+  width: 100%;
+  border: none;
+  height: 55px;
+  background: none;
+  padding: 8px 0;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0%;
+  outline: none;
+  resize: none;
+}
+
+.form-separator {
+  height: 1.5px;
+  background-color: #D2D2D2;
+}
+.formm-label{
+  font-size: 20px;
+  font-weight: 500;
+  color: #7E7E7E;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+.rating-stars {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.star {
+  width: 28px;
+  height: 28px;
+  margin-right: 5px;
+  font-size: 36px;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star.active {
+  color: #ffd700;
+}
+
+.star:hover {
+  color: #ffd700;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.submit-btn {
+  border-radius: 30px;
+  border: 1px solid #000;
+  background: transparent;
+  color: #242424;
+  height: 55px;
+  width: 187px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.32px;
+  line-height: 22.4px;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.reviews-section {
+  margin-left: 53px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.review-card {
+  background: none;
+  border-radius: 19px;
+  border: none;
+  margin-left: 53px;
+}
+
+.review-content {
+  position: relative;
+  width: 715px;
+  height: auto;
+  margin: 20px;
+}
+
+.review-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 23px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-top: 3.5px;
+  transform: scale(1.1);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-info {
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.reviewer-name {
+  font-weight: 700;
+  color: #010205;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0%;
+  margin-left: 5px;
+}
+
+.review-rating {
+  display: flex;
+  position: relative;
+  gap: 12px;
+  font-size: 36px;
+  line-height: 28px;
+}
+
+.star-filled {
+  color: #ffd700;
+}
+
+.star-empty {
+  color: #ddd;
+}
+
+.review-date {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-weight: 400;
+  color: #000;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0%;
+}
+
+.review-text {
+  font-weight: 400;
+  color: #000;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0%;
+}
+
+.container {
+  width: 100%;
+  max-width: 531px;
+  margin: 0 auto;
+}
+
+.form-card {
+  background: white;
+  border-radius: 28px;
+  padding: 4rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: 100%;
+}
+
+.form-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: -1.44px;
+  line-height: 62.4px;
+  color: #010205;
+}
+
+.thank-you-message {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 140%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .form-card {
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  
+  .form-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+  
+  .form-content {
+    gap: 1.5rem;
+  }
+  
+  .form-input,
+  .form-textarea {
+    height: 70px;
+    padding: 1.5rem 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .form-button-container {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+  
+  .form-card {
+    padding: 1.5rem;
+  }
+  
+  .form-title {
+    font-size: 1.75rem;
+  }
+  
+  .form-input,
+  .form-textarea {
+    font-size: 1.125rem;
+    padding: 1.25rem 0.75rem;
+  }
+}

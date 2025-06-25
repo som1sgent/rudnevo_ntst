@@ -1,0 +1,246 @@
+.Mast-lab {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.Mast {
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.container_1 {
+  width: 284.32px;
+  margin: 31px;
+}
+
+.container_img_6:hover img,
+.container_img_5:hover img,
+.container_img_4:hover img,
+.container_img_3:hover img,
+.container_img_2:hover img,
+.container_img_1:hover img {
+  filter: brightness(0.7);
+}
+
+.container_img_1 {
+  position: relative;
+  width: 284.32px;
+  height: 466.09px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.container_img_6 img,
+.container_img_5 img,
+.container_img_4 img,
+.container_img_3 img,
+.container_img_2 img,
+.container_img_1 img {
+  transition: filter 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container_text_6,
+.container_text_5,
+.container_text_4,
+.container_text_3,
+.container_text_2,
+.container_text_1 {
+  position: absolute;
+  opacity: 0; 
+  transition: opacity 0.5s ease;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  margin-top: 20px;
+}
+
+.container_text_1 {
+  position: absolute;
+  margin-left: 25px;
+  z-index: 10;
+}
+
+.container_img_6:hover .container_text_6,
+.container_img_5:hover .container_text_5,
+.container_img_4:hover .container_text_4,
+.container_img_3:hover .container_text_3,
+.container_img_2:hover .container_text_2,
+.container_img_1:hover .container_text_1 {
+  opacity: 1; 
+}
+
+h1 {
+    color: black;
+}
+
+.container_text_1_2 {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container_text_3_2 h1,
+.container_text_4_2 h1,
+.container_text_5_2 h1,
+.container_text_6_2 h1,
+.container_text_1_2 h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+.container_text_1_2{
+  text-align: right;
+  width: 180px;
+  margin-left: 105px;
+}
+.container_text_2_2 h1{
+  font-size: 23px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.6;
+  position: relative;
+  top: -15px;
+
+}
+.container_text_2_2 span1{
+  position: relative;
+  left: 90px;
+}
+.container_text_2_2 span2{
+  position: relative;
+  left: 110px;
+}
+.container_2 {
+  width: 643.21px;
+  height: 551.85px;
+  margin-left: 380px;
+  margin-top: -578px;
+}
+
+.container_img_2 {
+  position: relative;
+}
+
+.container_text_2 {
+  position: absolute;
+  margin-left: 360px;
+}
+
+.container_text_2_2 {
+  margin-top: -70px;
+  width: 650px;
+}
+
+
+.container_3 {
+  width: 284.32px;
+  height: 466.09px;
+  margin-left: 1080px;
+  margin-top: -550px;
+}
+
+.container_img_3 {
+  position: relative;
+  width: 284.32px;
+  height: 466.09px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.container_text_3 {
+  position: absolute;
+  margin-left: 100px;
+}
+
+.container_text_3_2 {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container_4 {
+  width: 284.32px;
+  height: 466.09px;
+  margin-top: 170px;
+  margin-left: 40px;
+}
+
+.container_img_4 {
+  position: relative;
+  width: 284.32px;
+  height: 466.09px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.container_text_4 {
+  position: absolute;
+  margin-left: 100px;
+}
+
+.container_text_4_2 {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container_5 {
+  width: 284.32px;
+  height: 464.09px;
+  margin-top: -464px;
+  margin-left: 380px;
+}
+
+.container_img_5 {
+  position: relative;
+  width: 284.32px;
+  height: 466.09px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.container_text_5 {
+  position: absolute;
+  margin-left: 50px;
+}
+
+.container_text_5_2 {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container_6 {
+  width: 643.21px;
+  height: 551.85px;
+  margin-left: 715px;
+  margin-top: -464px;
+}
+
+.container_img_6 {
+  position: relative;
+}
+
+.container_text_6 {
+  position: absolute;
+  margin-left: 390px;
+}
+
+.container_text_6_2 {
+  margin-top: -70px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

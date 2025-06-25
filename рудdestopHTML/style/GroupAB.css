@@ -1,0 +1,59 @@
+.Group-AB {
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: 542px;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.IMG {
+    display: flex;
+    position: relative;
+}
+
+.IMG p { 
+    position: absolute;
+    font-size: 70px;
+    width: 400px;
+    line-height: 100%;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.IMG span {
+    position: absolute;
+    top: 480px;
+    left: 970px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.Glav-text {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.G-T,
+.M-T {
+    width: 1000px;
+    margin-right: 260px;
+}
+
+.G-T h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.M-T {
+    margin-top: 20px;
+}
+
+.M-T p{
+    color: #878C91;
+}

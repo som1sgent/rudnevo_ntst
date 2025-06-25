@@ -1,0 +1,154 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 32px 80px;
+}
+  
+.footer-content {
+  display: flex;
+  gap: 90px;
+}
+
+.logo-section {
+  gap: 10px;
+  display: flex;
+  position: relative;
+}
+
+.footer-nav-column {
+  width: 200px;
+}
+
+.footer-logo {
+  max-width: 340px;
+}
+
+.K img {
+  width: 20px;
+  height: 20px;
+}
+
+.K {
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  position: relative;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.footer-logo p {
+  font-size: 12px;
+  line-height: 16.8px;
+  color: #9b9b9c;
+  margin: 24px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+  
+.footer-nav {
+  display: flex;
+  gap: 60px;
+}
+  
+.footer-nav-column h3 {
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -1%;
+  font-weight: 600;
+  color: #192031;
+  margin-bottom: 20px;
+}
+  
+.footer-nav-column ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+  
+.footer-nav-column a {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #9b9b9c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+  
+.footer-nav-column a:hover {
+  color: #192031;
+}
+
+/* Tooltip для телефона */
+.email-modal,
+.phone-modal {
+  position: absolute;
+  left: 20px;
+  bottom: 45px; /* расстояние над иконкой */
+  transform: translateX(-50%);
+  /* Остальные стили */
+}
+.phone-modal-content {
+  background: #fff;
+  padding: 5px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  text-align: center;
+  width: 125px;
+  height: 30px;
+  position: relative;
+  font-size: 16px;
+  color: #222;
+  pointer-events: auto;
+}
+.email-modal-content {
+  background: #fff;
+  padding: 5px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  text-align: center;
+  width: 200px;
+  height: 30px;
+  position: relative;
+  font-size: 16px;
+  color: #222;
+  pointer-events: auto;
+}
+
+.email-modal-content p1,
+.phone-modal-content p1 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 20px;
+
+}
+
+.phone-modal-content::after {
+  display: none;
+}
+
+.phone-modal, .email-modal {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(.4,0,.2,1);
+}
+.phone-modal.visible, .email-modal.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
